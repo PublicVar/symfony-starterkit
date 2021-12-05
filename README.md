@@ -8,6 +8,7 @@ Dependencies :
 * Symfony 6
 * Symfony CLI  
 * Docker
+* PHP_CodeSniffer
 
 # How to use 
 
@@ -20,5 +21,14 @@ docker-composer up
 ```
 
 ```
+symfony composer install
+symfony server:start
+```
 
+# Run quality tool
+
+```
+vendor/bin/phpcs
+yarn run linter
+vendor/bin/phpstan analyse src tests migrations
 ```
