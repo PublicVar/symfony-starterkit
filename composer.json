@@ -45,6 +45,8 @@
         "twig/twig": "^2.12|^3.0"
     },
     "require-dev": {
+        "doctrine/data-fixtures": "^1.5",
+        "hautelook/alice-bundle": "^2.10",
         "phpstan/phpstan": "^1.2",
         "phpunit/phpunit": "^9.5",
         "roave/security-advisories": "dev-latest",
@@ -55,7 +57,8 @@
         "symfony/maker-bundle": "^1.0",
         "symfony/phpunit-bridge": "^6.0",
         "symfony/stopwatch": "6.0.*",
-        "symfony/web-profiler-bundle": "6.0.*"
+        "symfony/web-profiler-bundle": "6.0.*",
+        "theofidry/alice-data-fixtures": "^1.5"
     },
     "config": {
         "optimize-autoloader": true,
