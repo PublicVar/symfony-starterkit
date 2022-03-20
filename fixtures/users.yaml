@@ -6,4 +6,4 @@ App\Entity\User:
         email: superadmin@mail.com
         password: <{password}>
         roles:
-            - SUPER_ADMIN
+            - ROLE_SUPER_ADMIN
