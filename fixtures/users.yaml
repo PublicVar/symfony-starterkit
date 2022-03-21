@@ -1,0 +1,9 @@
+parameters:
+    password: $2y$13$4R19PJDPANlL4XGTGQGbL.XVwTeX0faCCV5hz4nYuZIOeFxbKDCk2 # password
+
+App\Entity\User:
+    superadmin:
+        email: superadmin@mail.com
+        password: <{password}>
+        roles:
+            - ROLE_SUPER_ADMIN

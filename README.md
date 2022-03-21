@@ -23,6 +23,8 @@ docker-composer up
 ```
 symfony composer install
 symfony server:start
+yarn install
+yarn run dev-server
 ```
 
 # Run quality tool
