@@ -3,6 +3,8 @@ parameters:
 
 App\Entity\User:
     superadmin:
+        firstname: super
+        lastname: admin
         email: superadmin@mail.com
         password: <{password}>
         roles:
