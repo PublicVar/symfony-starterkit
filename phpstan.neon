@@ -1,0 +1,12 @@
+parameters:
+    level: 8
+    paths:
+        - src
+        - tests
+    doctrine:
+        objectManagerLoader: tests/object-manager.php
+    excludePaths:
+        - tests/
+        - tests/object-manager.php
+#        - tests/acceptance/FirstCest.php
+
