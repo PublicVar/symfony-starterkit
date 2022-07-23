@@ -34,3 +34,9 @@ vendor/bin/phpcs
 yarn run linter
 vendor/bin/phpstan analyse src tests migrations
 ```
+
+Or 
+
+```
+make analyse
+```
