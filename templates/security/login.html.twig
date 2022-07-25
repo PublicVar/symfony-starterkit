@@ -4,8 +4,8 @@
 
     {% block content %}
         <div class="container">
-            <div class="row justify-content-center align-items-center"> 
-                <form method="post" class="col-xs-12 col-md-4">
+            <div class="row justify-content-center align-items-center">
+                <form method="post" class="col-xs-12 col-md-6 col-lg-4">
                     {% if error %}
                         <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
                     {% endif %}
@@ -26,7 +26,7 @@
                                          value="{{ csrf_token('authenticate') }}"
                                          >
 
-                                         <button class="btn btn-lg btn-primary" type="submit">
+                                         <button class="btn btn-lg btn-primary w-100" type="submit">
                                              Sign in
                                          </button>
                 </form>

@@ -1,7 +1,11 @@
-.PHONY: phpstan php-cs-fixer composer-valid doctrine fix analyse install-quality
+.PHONY: phpstan php-cs-fixer composer-valid doctrine fix analyse install-quality local
+
+local:
+	symfony server:start -d
+	yarn run dev-server
 
 install-quality:
-    cp bin/pre-commit .git/hooks/pre-commit
+	cp bin/pre-commit .git/hooks/pre-commit
 
 phpstan:
 	php vendor/bin/phpstan analyse -c phpstan.neon

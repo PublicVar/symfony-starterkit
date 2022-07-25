@@ -22,20 +22,15 @@ docker-composer up
 
 ```
 symfony composer install
-symfony server:start
 yarn install
-yarn run dev-server
+```
+
+Start the server local :
+```
+make local
 ```
 
 # Run quality tool
-
-```
-vendor/bin/phpcs
-yarn run linter
-vendor/bin/phpstan analyse src tests migrations
-```
-
-Or 
 
 ```
 make analyse
