@@ -17,12 +17,7 @@ Clone the project :
 ```
 git clone git@github.com:PublicVar/symfony-starterkit.git project-name
 cd project-name
-docker-composer up
-```
-
-```
-symfony composer install
-yarn install
+make install
 ```
 
 Start the server local :

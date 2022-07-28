@@ -1,6 +1,16 @@
-.PHONY: phpstan php-cs-fixer composer-valid doctrine fix analyse install-quality local
+.PHONY: phpstan php-cs-fixer composer-valid doctrine fix analyse install-quality local install
+
+install:
+	docker-compose up -d
+	symfony composer install
+	symfony console d:m:m --no-interaction
+	symfony console h:f:l --no-interaction
+	yarn install
+	symfony server:start -d
+	yarn run dev-server
 
 local:
+	docker-compose up -d
 	symfony server:start -d
 	yarn run dev-server
 
